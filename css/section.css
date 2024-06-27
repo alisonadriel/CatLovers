@@ -1,0 +1,137 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.our-cats {
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  align-items: center;
+  justify-content: center;
+  margin: -150px auto;
+}
+
+.our-cats h2 {
+  font-size: 3rem;
+  position: relative;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
+
+.our-cats h2::before {
+  content: "";
+  display: block;
+  width: 228px;
+  height: 220px;
+  background: url(../img/cat-icon3.png) no-repeat left;
+  position: absolute;
+  z-index: -1;
+  left: -145px;
+  top: -80px;
+}
+
+.our-cats p {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  color: var(--about-color);
+}
+
+.our-cats h3 {
+  font-size: 2rem;
+  padding-top: 30px;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.cat-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+  gap: 50px;
+  margin-bottom: 48px;
+}
+
+.cat-img img {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 40px 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.103);
+}
+
+.cat-img img.active {
+  opacity: 1;
+}
+
+.cat-img img:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  transition-duration: 0.3s;
+}
+
+@media(max-width:1000px){
+  .our-cats h2{
+    font-size: 2.5rem;
+  }
+  .our-cats p{
+    margin: 2px 20px;
+  }
+  .our-cats h2::before {
+    content: "";
+    display: block;
+    width: 228px;
+    height: 220px;
+    background: url(../img/cat-icon3.png) no-repeat left;
+    position: absolute;
+    z-index: -1;
+    left: -145px;
+    top: -95px;
+  }
+
+  @media(max-width: 768px){
+    .our-cats h2{
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .our-cats h2::before {
+      content: "";
+      display: block;
+      width: 230px;
+      height: 220px;
+      background: url(../img/cat-icon3.png) no-repeat left;
+      position: absolute;
+      z-index: -1;
+      left: 125px;
+      top: -95px;
+  }
+}
+@media(max-width:390px){
+  .our-cats h2{
+    display: block;
+    margin-left: 20px;
+    color: var(--orange);
+  }
+  .our-cats h2::before{
+    display: none;
+  }
+  .our-cats p{
+    margin-top: -20px;
+  }
+
+  .cat-img img{
+    width: 200px;
+    margin: 0px;
+  }
+}
+}

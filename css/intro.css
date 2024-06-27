@@ -1,0 +1,95 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao img {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 1.875rem;
+  position: relative;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/paw.png) no-repeat center;
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  top: -25px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: var(--p-color);
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao h1::before {
+    display: block;
+    width: 118px;
+    height: 98px;
+    background: url(../img/paw.png);
+    position: absolute;
+    z-index: -1;
+    right: 120px;
+    top: -35px;
+  }
+}
+
+@media (max-width: 390px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao h1{
+    color: var(--blue);
+  }
+
+  .introducao h1::before{
+    display: none;
+  }
+
+  .introducao img {
+    display: none;
+  }
+}
