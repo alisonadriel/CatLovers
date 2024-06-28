@@ -22,6 +22,8 @@
   font-size: 4.5rem;
   position: relative;
   z-index: 1;
+  color: var(--black);
+  text-decoration: none;
 }
 
 .footer-container h1::before {
@@ -39,6 +41,7 @@
 .footer-container p {
   font-size: 1.5rem;
   color: var(--p-color);
+  text-decoration: none;
 }
 
 .footer-list {
@@ -59,63 +62,65 @@
   text-decoration: underline;
 }
 
-#linkedin {
-  width: 23px;
+#wpp {
+  width: 24px;
 }
 
-#github {
-  width: 20px;
+#inst {
+  width: 16px;
 }
 
-@media (max-width:768px){
-.footer{
-max-width: 1200px;
-background-color: var(--bg-color);
+#facebook{
+  width: 25px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    max-width: 1200px;
+    background-color: var(--bg-color);
+  }
 }
 
-
-@media (max-width: 390px){
-  .footer-container h1::before{
+@media (max-width: 420px) {
+  .footer-container h1::before {
     display: none;
   }
-.footer-img{
-  width: 200px;
-}
+  .footer-img {
+    width: 200px;
+  }
 
-.footer-list{
-  margin: 20px auto;
-}
+  .footer-list {
+    margin: 20px auto;
+  }
 
-.footer-container h1{
-  font-size: 2rem;
-  color: var(--dark-salmon);
-}
+  .footer-container h1 {
+    font-size: 2rem;
+    color: var(--dark-salmon);
+  }
 
-.footer-container p{
-  font-size: 1rem;
-  margin-bottom: -15px;
-}
+  .footer-container p {
+    font-size: 1rem;
+    margin-bottom: -15px;
+  }
 
-.footer-list li a {
-  color: black;
-  font-size: 0.8rem;
-  text-decoration: none;
-}
+  .footer-list li a {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: none;
+    gap: 5px;
+  }
 
-.footer-list li a:hover {
-  text-decoration: underline;
-}
+  .footer-list li a:hover {
+    text-decoration: underline;
+  }
 
-#github{
-  width: 10px;
-  color: var(--orange);
-}
+  #wpp{
+    width: 14px;
+    color: var(--black);
+  }
 
-#linkedin{
-  width: 14px;
-  color: var(--orange);
-}
-
+  #inst {
+    width: 11px;
+    color: var(--black);
+  }
 }
