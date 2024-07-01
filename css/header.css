@@ -99,7 +99,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: currentColor;
+    background: var(--black);
     margin-top: 5px;
     transition: .3s;
     position: relative;
