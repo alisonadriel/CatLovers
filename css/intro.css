@@ -85,6 +85,10 @@
     color: var(--blue);
   }
 
+  .introducao p{
+    margin-top: -20px;
+  }
+
   .introducao h1::before{
     display: none;
   }

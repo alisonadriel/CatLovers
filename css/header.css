@@ -37,7 +37,7 @@
   background-color: var(--dark-salmon);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) AND (min-width:320px) {
 
 
   .header-menu{
@@ -53,18 +53,21 @@
     background-color: var(--bg-color);
     visibility: hidden;
     overflow-y: hidden;
+   
   } 
 
   #nav.active .header-menu{
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
+    
   }
 
   .header-menu a{
     padding: 1rem 0;
     margin: -1px 1rem;
     text-align: center;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.26);
     
   }
   .header {

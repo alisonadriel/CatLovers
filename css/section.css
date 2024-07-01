@@ -121,12 +121,13 @@
     display: block;
     margin-left: 20px;
     color: var(--orange);
+    margin-top: -100px;
   }
   .our-cats h2::before{
     display: none;
   }
   .our-cats p{
-    margin-top: -20px;
+    margin-top: -85px;
   }
 
   .cat-img img{

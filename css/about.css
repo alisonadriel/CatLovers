@@ -89,6 +89,7 @@
 
  @media(max-width:390px){
  .sobre h2{
+  margin-top: -50px;
   width: 300px;
   display: block;
   margin-left: 20px;
@@ -97,6 +98,10 @@
  }
  .sobre h2::before{
   display: none;
+ }
+
+ .sobre-texto{
+  margin-top: -20px;
  }
 }
 }
