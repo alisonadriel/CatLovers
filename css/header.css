@@ -106,7 +106,7 @@
   }
 
   #nav.active #hamburger{
-    border-top-color: transparent;
+    border-top-color: var(--black);
   }
 
   #nav.active #hamburger::before{
