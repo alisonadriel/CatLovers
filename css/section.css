@@ -42,8 +42,8 @@
 }
 
 .our-cats h3 {
-  font-size: 2rem;
-  padding-top: 30px;
+  font-size: 1.8rem;
+  margin: 30px 20px;
   text-align: center;
   color: var(--dark-grey);
 }
@@ -79,12 +79,14 @@
   transition-duration: 0.3s;
 }
 
-@media(max-width:1000px){
-  .our-cats h2{
+@media (max-width: 1000px) {
+  .our-cats h2 {
     font-size: 2.5rem;
+    margin: 10px 40px;
   }
-  .our-cats p{
-    margin: 2px 20px;
+  .our-cats p {
+   text-align: start;
+   margin: 0px 20px;
   }
   .our-cats h2::before {
     content: "";
@@ -98,11 +100,9 @@
     top: -95px;
   }
 
-  @media(max-width: 768px){
-    .our-cats h2{
-      display: flex;
-      justify-content: center;
-      position: relative;
+  @media (max-width: 768px) {
+    .our-cats h2 {
+      text-align: center;
     }
     .our-cats h2::before {
       content: "";
@@ -112,27 +112,57 @@
       background: url(../img/cat-icon3.png) no-repeat left;
       position: absolute;
       z-index: -1;
-      left: 125px;
+      left: 75px;
       top: -95px;
-  }
-}
-@media(max-width:390px){
-  .our-cats h2{
-    display: block;
-    margin-left: 20px;
-    color: var(--orange);
-    margin-top: -100px;
-  }
-  .our-cats h2::before{
-    display: none;
-  }
-  .our-cats p{
-    margin-top: -85px;
+    }
   }
 
-  .cat-img img{
-    width: 200px;
-    margin: 0px;
+  @media (max-width: 520px) {
+    .our-cats p {
+      margin: -10px 20px;
+      
+    }
+
+    .our-cats h2 {
+      margin: -100px 20px;
+      position: relative;
+    }
+
+    .our-cats h2::before {
+      content: "";
+      display: block;
+      width: 230px;
+      height: 220px;
+      background: url(../img/cat-icon3.png) no-repeat left;
+      position: absolute;
+      z-index: -1;
+      left: 95px;
+      top: -95px;
+    }
   }
-}
+  @media (max-width: 390px) {
+
+  .our-cats{
+    margin-top: -280px;
+  }    
+    .our-cats h2 {
+      display: block;
+      margin-top: -20px;
+      margin-left: -75px;
+      color: var(--orange);
+      position: relative;
+    }
+    .our-cats h2::before {
+      display: none;
+      position: absolute;
+    }
+    .our-cats p {
+      margin-top: -50px;
+    }
+
+    .cat-img img {
+      width: 200px;
+      margin: 0px;
+    }
+  }
 }

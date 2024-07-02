@@ -23,6 +23,7 @@
   position: relative;
   animation-name: slideInLeft;
   animation-duration: 1s;
+  margin-left: 340px;
 }
 
 .sobre h2::before {
@@ -41,11 +42,13 @@
   padding-top: 30px;
   font-size: 1.5rem;
   color: var(--about-color);
+  margin: 10px 350px;
 }
 
 @media(max-width: 1000px){
   .sobre h2{
     font-size:2.5rem;
+    margin: 10px 40px;
   }
   .sobre h2::before{
     display: block;
@@ -60,6 +63,7 @@
 
   .sobre-texto{
     font-size: 1.2rem;
+    margin: 10px 40px;
   }
 }
 
@@ -76,16 +80,19 @@
     background: url(../img/blue-paw.png);
     position: absolute;
     z-index: -1;
-    left: 250px;
+    left: 190px;
     top: -35px;
   }
   .sobre-texto{
     margin: 2px 20px;
+    text-align: start;
   }
 
   .sobre-texto br{
     display: none;
   }
+
+  
 
  @media(max-width:390px){
  .sobre h2{

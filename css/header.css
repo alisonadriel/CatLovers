@@ -37,7 +37,7 @@
   background-color: var(--dark-salmon);
 }
 
-@media (max-width: 600px) AND (min-width:320px) {
+@media (max-width: 600px){
 
 
   .header-menu{
@@ -57,7 +57,7 @@
   } 
 
   #nav.active .header-menu{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 450px);
     visibility: visible;
     overflow-y: auto;
     
@@ -117,4 +117,5 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+
 }
