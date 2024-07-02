@@ -1,3 +1,4 @@
+/* Animação */
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
@@ -7,6 +8,7 @@
   }
 }
 
+/* Estilos para a seção de introdução */
 .introducao {
   max-width: 1200px;
   padding: 40px 20px;
@@ -49,6 +51,7 @@
   color: var(--p-color);
 }
 
+/* Estilos responsivos */
 @media (max-width: 1000px) {
   .introducao h1 {
     font-size: 3rem;
@@ -81,6 +84,7 @@
   .introducao {
     grid-template-columns: 1fr;
   }
+
   .introducao h1 {
     color: var(--blue);
   }

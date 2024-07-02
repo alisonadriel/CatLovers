@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url(header.css);
+@import url("header.css");
 
-/* colors */
+/* Definição de Cores */
 :root {
   --white: #fff;
   --black: #141414;
@@ -18,26 +18,25 @@
   --about-color: rgb(71, 71, 71);
 }
 
+/* Regras Globais */
 * {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
-  margin: 0px;
+  margin: 0;
   color: var(--black);
   background-color: var(--bg-color);
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0px;
+/* Estilização de Elementos */
+h1, h2, h3, p {
+  margin: 0;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }

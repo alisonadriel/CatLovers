@@ -1,3 +1,4 @@
+/* Animação */
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
@@ -7,6 +8,7 @@
   }
 }
 
+/* Estilos para a seção Our Cats */
 .our-cats {
   max-width: 1200px;
   display: grid;
@@ -48,6 +50,7 @@
   color: var(--dark-grey);
 }
 
+/* Estilos para imagens de gatos */
 .cat-img {
   display: flex;
   flex-wrap: wrap;
@@ -58,9 +61,6 @@
 }
 
 .cat-img img {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 40px 0;
   transition: opacity 1s ease-in-out;
   opacity: 0;
   max-width: 100%;
@@ -79,88 +79,68 @@
   transition-duration: 0.3s;
 }
 
+/* Estilos responsivos */
 @media (max-width: 1000px) {
   .our-cats h2 {
     font-size: 2.5rem;
     margin: 10px 40px;
   }
+
   .our-cats p {
     text-align: start;
     margin: 0px 20px;
   }
+
   .our-cats h2::before {
-    content: "";
-    display: block;
-    width: 228px;
-    height: 220px;
-    background: url(../img/cat-icon3.png) no-repeat left;
-    position: absolute;
-    z-index: -1;
-    left: -145px;
     top: -95px;
   }
+}
 
-  @media (max-width: 768px) {
-    .our-cats h2 {
-      text-align: center;
-    }
-    .our-cats h2::before {
-      content: "";
-      display: block;
-      width: 230px;
-      height: 220px;
-      background: url(../img/cat-icon3.png) no-repeat left;
-      position: absolute;
-      z-index: -1;
-      left: 75px;
-      top: -95px;
-    }
+@media (max-width: 768px) {
+  .our-cats h2 {
+    text-align: center;
   }
 
-  @media (max-width: 520px) {
-    .our-cats p {
-      margin: -10px 20px;
-    }
-
-    .our-cats h2 {
-      margin: -100px 20px;
-      position: relative;
-    }
-
-    .our-cats h2::before {
-      content: "";
-      display: block;
-      width: 230px;
-      height: 220px;
-      background: url(../img/cat-icon3.png) no-repeat left;
-      position: absolute;
-      z-index: -1;
-      left: 95px;
-      top: -95px;
-    }
+  .our-cats h2::before {
+    left: 75px;
   }
-  @media (max-width: 390px) {
-    .our-cats {
-      margin-top: -280px;
-    }
-    .our-cats h2 {
-      display: block;
-      margin-top: -20px;
-      margin-left: -75px;
-      color: var(--orange);
-      position: relative;
-    }
-    .our-cats h2::before {
-      display: none;
-      position: absolute;
-    }
-    .our-cats p {
-      margin-top: -50px;
-    }
+}
 
-    .cat-img img {
-      width: 200px;
-      margin: 0px;
-    }
+@media (max-width: 520px) {
+  .our-cats p {
+    margin: -10px 20px;
+  }
+
+  .our-cats h2 {
+    margin: -100px 20px;
+  }
+
+  .our-cats h2::before {
+    left: 95px;
+  }
+}
+
+@media (max-width: 390px) {
+  .our-cats {
+    margin-top: -280px;
+  }
+
+  .our-cats h2 {
+    margin-top: -20px;
+    margin-left: -75px;
+    color: var(--orange);
+  }
+
+  .our-cats h2::before {
+    display: none;
+  }
+
+  .our-cats p {
+    margin-top: -50px;
+  }
+
+  .cat-img img {
+    width: 200px;
+    margin: 0;
   }
 }

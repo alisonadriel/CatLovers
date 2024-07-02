@@ -1,3 +1,4 @@
+/* Animações */
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);
@@ -7,6 +8,7 @@
   }
 }
 
+/* Estilo da seção "sobre" */
 .sobre {
   max-width: 100%;
   height: 400px;
@@ -18,6 +20,7 @@
   margin: 0 auto;
 }
 
+/* Estilo do título "h2" dentro da seção "sobre" */
 .sobre h2 {
   font-size: 3rem;
   position: relative;
@@ -38,6 +41,7 @@
   top: -30px;
 }
 
+/* Estilo do texto dentro da seção "sobre" */
 .sobre-texto {
   padding-top: 30px;
   font-size: 1.5rem;
@@ -45,70 +49,59 @@
   margin: 10px 350px;
 }
 
-@media(max-width: 1000px){
-  .sobre h2{
-    font-size:2.5rem;
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+  .sobre h2 {
+    font-size: 2.5rem;
     margin: 10px 40px;
   }
-  .sobre h2::before{
-    display: block;
+
+  .sobre h2::before {
     width: 120px;
     height: 98px;
-    background: url(../img/blue-paw.png);
-    position: absolute;
-    z-index: -1;
-    left: -40px;
     top: -35px;
   }
 
-  .sobre-texto{
+  .sobre-texto {
     font-size: 1.2rem;
     margin: 10px 40px;
   }
 }
 
-@media(max-width:768px){
-  .sobre h2{
+@media (max-width: 768px) {
+  .sobre h2 {
     display: flex;
     justify-content: center;
-    position: relative;
+    margin-left: 0; /* Remover a margem lateral para centralizar */
   }
-  .sobre h2::before{
-    display: block;
-    width: 118px;
-    height: 98px;
-    background: url(../img/blue-paw.png);
-    position: absolute;
-    z-index: -1;
+
+  .sobre h2::before {
     left: 190px;
-    top: -35px;
   }
-  .sobre-texto{
+
+  .sobre-texto {
     margin: 2px 20px;
     text-align: start;
   }
 
-  .sobre-texto br{
+  .sobre-texto br {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .sobre h2 {
+    margin-top: -50px;
+    width: 300px;
+    margin-left: 20px;
+    color: var(--salmon);
+  }
+
+  .sobre h2::before {
     display: none;
   }
 
-  
-
- @media(max-width:390px){
- .sobre h2{
-  margin-top: -50px;
-  width: 300px;
-  display: block;
-  margin-left: 20px;
-   color: var(--salmon);
-   position: relative;
- }
- .sobre h2::before{
-  display: none;
- }
-
- .sobre-texto{
-  margin-top: -20px;
- }
-}
+  .sobre-texto {
+    margin-top: -20px;
+  }
 }

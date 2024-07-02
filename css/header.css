@@ -1,3 +1,4 @@
+/* Estilos para a seção Header */
 .header {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,10 +12,7 @@
   cursor: pointer;
 }
 
-#btn {
-  display: none;
-}
-
+/* Estilos para o menu */
 .header-menu {
   display: flex;
   gap: 10px;
@@ -37,15 +35,25 @@
   background-color: var(--dark-salmon);
 }
 
+/* Estilos para o botão de menu */
+#btn {
+  display: none;
+}
+
+/* Estilos responsivos */
 @media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
   .header-menu {
-    /*display: none;*/
-    display: block;
+    display: block; /* Ajuste para demonstrar o menu no estado inicial */
     position: absolute;
     width: 100%;
     top: 240px;
-    right: 0px;
-    height: 0px;
+    right: 0;
+    height: 0;
     transition: 0.6s;
     z-index: 1000;
     background-color: var(--bg-color);
@@ -64,10 +72,6 @@
     margin: -1px 1rem;
     text-align: center;
     border-bottom: 4px solid rgba(0, 0, 0, 0.26);
-  }
-  .header {
-    flex-direction: column;
-    gap: 40px;
   }
 
   .header a {
