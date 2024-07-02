@@ -81,15 +81,15 @@
   .introducao {
     grid-template-columns: 1fr;
   }
-  .introducao h1{
+  .introducao h1 {
     color: var(--blue);
   }
 
-  .introducao p{
+  .introducao p {
     margin-top: -20px;
   }
 
-  .introducao h1::before{
+  .introducao h1::before {
     display: none;
   }
 

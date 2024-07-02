@@ -85,8 +85,8 @@
     margin: 10px 40px;
   }
   .our-cats p {
-   text-align: start;
-   margin: 0px 20px;
+    text-align: start;
+    margin: 0px 20px;
   }
   .our-cats h2::before {
     content: "";
@@ -120,7 +120,6 @@
   @media (max-width: 520px) {
     .our-cats p {
       margin: -10px 20px;
-      
     }
 
     .our-cats h2 {
@@ -141,10 +140,9 @@
     }
   }
   @media (max-width: 390px) {
-
-  .our-cats{
-    margin-top: -280px;
-  }    
+    .our-cats {
+      margin-top: -280px;
+    }
     .our-cats h2 {
       display: block;
       margin-top: -20px;
