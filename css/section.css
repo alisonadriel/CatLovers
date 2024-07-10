@@ -127,7 +127,7 @@
 
   .our-cats h2 {
     margin-top: -20px;
-    margin-left: -75px;
+    margin-left: -95px;
     color: var(--orange);
   }
 
@@ -136,7 +136,8 @@
   }
 
   .our-cats p {
-    margin-top: -50px;
+    margin-top: -40px;
+    margin-left: 18px;
   }
 
   .cat-img img {

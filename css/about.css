@@ -26,7 +26,7 @@
   position: relative;
   animation-name: slideInLeft;
   animation-duration: 1s;
-  margin-left: 340px;
+  margin-left: 70px;
 }
 
 .sobre h2::before {
@@ -46,7 +46,7 @@
   padding-top: 30px;
   font-size: 1.5rem;
   color: var(--about-color);
-  margin: 10px 350px;
+  margin: 10px 72px;
 }
 
 /* Estilos responsivos */
@@ -93,7 +93,8 @@
   .sobre h2 {
     margin-top: -50px;
     width: 300px;
-    margin-left: 20px;
+    position: absolute;
+    right: 90px;
     color: var(--salmon);
   }
 
